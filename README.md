@@ -12,4 +12,6 @@ Se o GitHub Pages mostrar erro **404 File not found**, confirme:
 2. Em **Settings → Pages**, a opção de source está configurada para **GitHub Actions**.
 3. A branch que dispara deploy (main/master/work) recebeu push recente.
 
+> Observação: o workflow usa `npm install` (não `npm ci`), então não depende de `package-lock.json` para iniciar.
+
 Após isso, o `index.html` é gerado automaticamente em `out/` durante o build e publicado pelo workflow.
