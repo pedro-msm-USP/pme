@@ -45,6 +45,7 @@ a { color: inherit; }
   border-radius: 10px;
   background: var(--blue);
   color: #fff;
+  background: var(--blue);
 }
 
 .container {
@@ -79,7 +80,7 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .brand {
