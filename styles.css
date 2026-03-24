@@ -70,9 +70,9 @@ p {
 .header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 30;
   border-bottom: 1px solid var(--line);
-  background: rgb(255 255 255 / 0.94);
+  background: rgb(255 255 255 / 0.96);
   backdrop-filter: blur(8px);
 }
 
@@ -88,6 +88,7 @@ p {
   text-decoration: none;
   display: inline-flex;
   flex-direction: column;
+  min-width: 220px;
 }
 
 .brand-short {
@@ -98,7 +99,7 @@ p {
 
 .brand-long {
   color: var(--text-soft);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 .nav {
@@ -204,23 +205,20 @@ h1 {
 
 .card {
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.86rem;
   background: #fff;
   padding: 1.1rem;
 }
 
 .footer {
   border-top: 1px solid var(--line);
-  padding: 2.4rem 0;
+  padding: 2.3rem 0;
 }
 
-.footer-grid {
-  grid-template-columns: 1.2fr 1fr 1fr;
-}
-
-.footer-title {
-  font-weight: 700;
-}
+.footer-grid { grid-template-columns: 1.2fr 1fr 1fr; gap: 2rem; }
+.footer-title { font-weight: 700; margin-bottom: 0.2rem; }
 
 @media (max-width: 900px) {
   .hero-grid,
@@ -228,9 +226,5 @@ h1 {
   .cards,
   .footer-grid {
     grid-template-columns: 1fr;
-  }
-
-  .nav {
-    display: none;
   }
 }
