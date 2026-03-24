@@ -4,57 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PME Poli-USP | Página Inicial</title>
-    <meta
-      name="description"
-      content="Departamento de Engenharia Mecânica da Escola Politécnica da USP — ensino, pesquisa e extensão."
-    />
+    <meta name="description" content="Departamento de Engenharia Mecânica da Escola Politécnica da USP." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
 
-    <header class="header" aria-label="Cabeçalho do site">
+    <header class="header" aria-label="Cabeçalho principal">
       <div class="container header-inner">
-        <a href="#" class="brand" aria-label="Início PME Poli-USP">
+        <a href="index.html" class="brand" aria-label="Página inicial do PME">
           <span class="brand-short">PME</span>
           <span class="brand-long">Departamento de Engenharia Mecânica · Poli-USP</span>
         </a>
 
         <nav class="nav" aria-label="Navegação principal">
-          <div class="menu-item has-submenu">
-            <a href="#">Oportunidades</a>
+          <div class="menu-item">
+            <button class="menu-toggle" type="button">Oportunidades</button>
             <div class="submenu" role="menu" aria-label="Submenu Oportunidades">
-              <a href="#" role="menuitem">Graduação</a>
-              <a href="#" role="menuitem">Pós-Graduação</a>
-              <a href="#" role="menuitem">Pós-Doutorado</a>
+              <a href="oportunidades.html#graduacao" role="menuitem">Graduação</a>
+              <a href="oportunidades.html#pos-graduacao" role="menuitem">Pós-Graduação</a>
+              <a href="oportunidades.html#pos-doutorado" role="menuitem">Pós-Doutorado</a>
             </div>
           </div>
 
-          <div class="menu-item has-submenu">
-            <a href="#">Laboratórios e Grupos de Pesquisa</a>
+          <div class="menu-item">
+            <button class="menu-toggle" type="button">Laboratórios e Grupos de Pesquisa</button>
             <div class="submenu" role="menu" aria-label="Submenu Laboratórios e Grupos de Pesquisa">
-              <a href="#" role="menuitem">Laboratórios</a>
-              <a href="#" role="menuitem">Grupos de Pesquisa</a>
+              <a href="laboratorios.html" role="menuitem">Laboratórios</a>
+              <a href="grupos-pesquisa.html" role="menuitem">Grupos de Pesquisa</a>
             </div>
           </div>
 
-          <a href="#">Grupos de Extensão</a>
-          <a href="#sobre">Sobre o PME</a>
-          <a href="#">O que faz um Engenheiro Mecânico</a>
+          <a href="grupos-extensao.html">Grupos de Extensão</a>
+          <a href="sobre.html">Sobre o PME</a>
+          <a href="engenheiro-mecanico.html">O que faz um Engenheiro Mecânico</a>
 
-          <div class="menu-item has-submenu">
-            <a href="#">Membros do PME</a>
+          <div class="menu-item">
+            <button class="menu-toggle" type="button">Membros do PME</button>
             <div class="submenu" role="menu" aria-label="Submenu Membros do PME">
-              <a href="#" role="menuitem">Administrativo</a>
-              <a href="#" role="menuitem">Corpo Docente</a>
-              <a href="#" role="menuitem">Técnicos</a>
-              <a href="#" role="menuitem">Corpo Discente</a>
+              <a href="membros.html#administrativo" role="menuitem">Administrativo</a>
+              <a href="membros.html#docente" role="menuitem">Corpo Docente</a>
+              <a href="membros.html#tecnicos" role="menuitem">Técnicos</a>
+              <a href="membros.html#discente" role="menuitem">Corpo Discente</a>
             </div>
           </div>
         </nav>
@@ -62,81 +56,68 @@
     </header>
 
     <main id="conteudo">
-      <section class="hero section">
+      <section class="section hero">
         <div class="container hero-grid">
-          <div class="hero-copy">
+          <div>
             <p class="eyebrow">Escola Politécnica da USP</p>
-            <h1>Excelência em Engenharia Mecânica com tradição e visão de futuro.</h1>
-            <p>
-              O PME atua na formação de engenheiros, no avanço da pesquisa e na integração
-              com a sociedade por meio de iniciativas de ensino, inovação e extensão.
+            <h1>Excelência acadêmica em Engenharia Mecânica com tradição e compromisso público.</h1>
+            <p class="lead">
+              O PME forma engenheiros, desenvolve pesquisa de alto impacto e promove
+              extensão universitária conectada aos desafios da sociedade.
             </p>
             <div class="hero-actions">
-              <a href="#sobre" class="btn btn-primary">Conheça o departamento</a>
-              <a href="#newsletter" class="btn btn-secondary">Receber novidades</a>
+              <a class="btn btn-primary" href="sobre.html">Conheça o departamento</a>
+              <a class="btn btn-secondary" href="oportunidades.html">Ver oportunidades</a>
+              <a class="btn btn-secondary" href="#newsletter">Receber notícias</a>
             </div>
           </div>
 
-          <aside class="hero-aside" aria-label="Resumo institucional">
-            <article>
-              <h2>Ensino</h2>
-              <p>Formação de base técnica sólida na graduação e pós-graduação.</p>
-            </article>
-            <article>
-              <h2>Pesquisa</h2>
-              <p>Produção científica com impacto acadêmico e tecnológico.</p>
-            </article>
-            <article>
-              <h2>Extensão</h2>
-              <p>Projetos e conexões com indústria, sociedade e inovação.</p>
-            </article>
+          <aside class="hero-panel" aria-label="Resumo institucional">
+            <h2>Resumo institucional</h2>
+            <ul>
+              <li>História ligada à evolução da engenharia no Brasil.</li>
+              <li>Relevância acadêmica dentro da Poli-USP.</li>
+              <li>Integração contínua entre ensino, pesquisa e extensão.</li>
+            </ul>
           </aside>
         </div>
       </section>
 
       <section class="section" id="sobre">
-        <div class="container two-col">
+        <div class="container split">
           <div>
             <p class="section-tag">Sobre o PME</p>
-            <h2>Departamento de referência dentro da Poli-USP.</h2>
+            <h2>Tradição e inovação dentro da Universidade de São Paulo.</h2>
           </div>
-          <div class="text-block">
-            <p>
-              O Departamento de Engenharia Mecânica da Escola Politécnica da USP combina
-              tradição universitária, excelência acadêmica e compromisso com a formação de
-              profissionais preparados para desafios complexos.
-            </p>
-            <p>
-              Esta página inicial foi construída como base limpa e escalável para receber,
-              na próxima etapa, conteúdo dinâmico e funcionalidades adicionais.
-            </p>
-          </div>
+          <p>
+            O Departamento de Engenharia Mecânica consolidou-se como referência na formação de profissionais
+            e na produção de conhecimento técnico-científico, reforçando o papel da Poli-USP como centro
+            de excelência universitária.
+          </p>
         </div>
       </section>
 
       <section class="section section-soft" id="pilares">
         <div class="container">
-          <header class="section-head">
-            <p class="section-tag">Pilares institucionais</p>
-            <h2>Graduação, Pós-Graduação, Pesquisa e Extensão.</h2>
-          </header>
+          <p class="section-tag">Pilares institucionais</p>
+          <h2>Graduação, Pós-Graduação, Pesquisa e Extensão</h2>
 
           <div class="cards">
             <article class="card">
               <h3>Graduação</h3>
-              <p>Base científica, raciocínio analítico e aplicação prática em engenharia.</p>
+              <p>Base sólida para formação técnica e visão crítica em engenharia.</p>
             </article>
             <article class="card">
               <h3>Pós-Graduação</h3>
-              <p>Mestrado e doutorado orientados à geração de conhecimento relevante.</p>
+              <p>Pesquisa avançada em mestrado e doutorado.</p>
             </article>
             <article class="card">
               <h3>Pesquisa</h3>
-              <p>Projetos em áreas estratégicas da engenharia mecânica contemporânea.</p>
+              <p>Projetos com impacto acadêmico, tecnológico e industrial.</p>
             </article>
             <article class="card">
               <h3>Extensão</h3>
-              <p>Atuação integrada com sociedade, indústria e ambientes de inovação.</p>
+              <p>Conexão com indústria e sociedade por meio de iniciativas aplicadas.</p>
             </article>
           </div>
         </div>
@@ -146,17 +127,38 @@
         <div class="container highlights">
           <div>
             <p class="section-tag">Destaques</p>
-            <h2>Página inicial objetiva, responsiva e preparada para crescimento.</h2>
+            <h2>Informação clara para alunos, pesquisadores e parceiros.</h2>
             <ul>
-              <li>Estrutura organizada para novas páginas institucionais.</li>
-              <li>Visual sóbrio com foco em leitura e credibilidade.</li>
-              <li>Base front-end pronta para integração de funcionalidades.</li>
+              <li>Acesse editais e trilhas na página de oportunidades.</li>
+              <li>Conheça laboratórios e grupos de pesquisa.</li>
+              <li>Acompanhe iniciativas de extensão e notícias institucionais.</li>
             </ul>
           </div>
+          <aside class="highlight-box">
+            <p class="eyebrow">Chamadas principais</p>
+            <p><strong>Explore oportunidades, laboratórios e notícias do PME.</strong></p>
+          </aside>
+        </div>
+      </section>
 
-          <div class="highlight-box">
-            <p>PME · Poli-USP</p>
-            <strong>Comunicação institucional clara, elegante e profissional.</strong>
+      <section class="section section-soft" id="fotos-pme">
+        <div class="container">
+          <p class="section-tag">Galeria institucional</p>
+          <h2>Imagens da Cidade Universitária (USP)</h2>
+
+          <div class="photo-grid">
+            <figure class="photo-card">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Campus%20da%20USP%2C%20Julho%20de%202024.jpg" alt="Vista panorâmica do campus da USP" loading="lazy" />
+              <figcaption>Campus da USP (Wikimedia Commons).</figcaption>
+            </figure>
+            <figure class="photo-card">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cidade%20Universit%C3%A1ria%20USP.jpg" alt="Paisagem da Cidade Universitária da USP" loading="lazy" />
+              <figcaption>Cidade Universitária USP (Wikimedia Commons).</figcaption>
+            </figure>
+            <figure class="photo-card">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cidade%20universit%C3%A1ria%20da%20Universidade%20de%20S%C3%A3o%20Paulo%20%28USP%29.jpg" alt="Imagem da Cidade Universitária da Universidade de São Paulo" loading="lazy" />
+              <figcaption>Universidade de São Paulo — Cidade Universitária (Wikimedia Commons).</figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -165,19 +167,24 @@
         <div class="container newsletter-grid">
           <div>
             <p class="section-tag">Newsletter</p>
-            <h2>Receba oportunidades e comunicados do PME.</h2>
-            <p>
-              Front-end inicial da newsletter. A integração com API/serviço de e-mail será
-              implementada na próxima fase.
-            </p>
+            <h2>Receba comunicados e oportunidades do PME.</h2>
+            <p>Formulário inicial para cadastro de interessados, pronto para integração futura.</p>
           </div>
 
-          <form class="newsletter-form" aria-label="Formulário da newsletter">
-            <label for="nome">Nome (opcional)</label>
-            <input id="nome" type="text" name="nome" />
+          <form class="newsletter-form" aria-label="Formulário de newsletter">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome" />
 
             <label for="email">E-mail</label>
-            <input id="email" type="email" name="email" required />
+            <input id="email" name="email" type="email" required placeholder="nome@exemplo.com" />
+
+            <label for="interesse">Interesse principal</label>
+            <select id="interesse" name="interesse">
+              <option>Graduação</option>
+              <option>Pós-Graduação</option>
+              <option>Pesquisa</option>
+              <option>Extensão</option>
+            </select>
 
             <button type="submit">Quero receber novidades</button>
           </form>
@@ -193,11 +200,13 @@
         </div>
         <div>
           <p class="footer-title">Contato</p>
-          <p>[inserir e-mail institucional]</p>
+          <p>secretaria.pme@usp.br</p>
+          <p>Av. Prof. Mello Moraes, 2231 · São Paulo/SP</p>
         </div>
         <div>
-          <p class="footer-title">© 2026 PME Poli-USP</p>
-          <p>Todos os direitos reservados.</p>
+          <p class="footer-title">Navegação</p>
+          <p><a href="oportunidades.html">Oportunidades</a> · <a href="sobre.html">Sobre o PME</a></p>
+          <p>© 2026 PME Poli-USP</p>
         </div>
       </div>
     </footer>

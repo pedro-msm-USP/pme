@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PME Poli-USP | Oportunidades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <span class="brand-short">PME</span>
+          <span class="brand-long">Departamento de Engenharia Mecânica · Poli-USP</span>
+        </a>
+        <nav class="nav" aria-label="Navegação principal">
+          <div class="menu-item">
+            <button class="menu-toggle" type="button">Oportunidades</button>
+            <div class="submenu" role="menu">
+              <a href="oportunidades.html#graduacao" role="menuitem">Graduação</a>
+              <a href="oportunidades.html#pos-graduacao" role="menuitem">Pós-Graduação</a>
+              <a href="oportunidades.html#pos-doutorado" role="menuitem">Pós-Doutorado</a>
+            </div>
+          </div>
+          <div class="menu-item">
+            <button class="menu-toggle" type="button">Laboratórios e Grupos de Pesquisa</button>
+            <div class="submenu" role="menu">
+              <a href="laboratorios.html" role="menuitem">Laboratórios</a>
+              <a href="grupos-pesquisa.html" role="menuitem">Grupos de Pesquisa</a>
+            </div>
+          </div>
+          <a href="grupos-extensao.html">Grupos de Extensão</a>
+          <a href="sobre.html">Sobre o PME</a>
+          <a href="engenheiro-mecanico.html">O que faz um Engenheiro Mecânico</a>
+          <div class="menu-item">
+            <button class="menu-toggle" type="button">Membros do PME</button>
+            <div class="submenu" role="menu">
+              <a href="membros.html#administrativo" role="menuitem">Administrativo</a>
+              <a href="membros.html#docente" role="menuitem">Corpo Docente</a>
+              <a href="membros.html#tecnicos" role="menuitem">Técnicos</a>
+              <a href="membros.html#discente" role="menuitem">Corpo Discente</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="section hero">
+        <div class="container">
+          <p class="eyebrow">Página geral</p>
+          <h1>Oportunidades acadêmicas do PME</h1>
+          <p class="lead">Dados mockados organizados para publicação de editais, bolsas, monitoria, IC e processos seletivos.</p>
+          <div class="hero-actions">
+            <a class="btn btn-secondary" href="#graduacao">Graduação</a>
+            <a class="btn btn-secondary" href="#pos-graduacao">Pós-Graduação</a>
+            <a class="btn btn-secondary" href="#pos-doutorado">Pós-Doutorado</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container filter-box" aria-label="Filtros simples">
+          <span class="chip">Categoria</span>
+          <span class="chip">Status</span>
+          <span class="chip">Período</span>
+          <span class="chip">Pronto para backend</span>
+        </div>
+      </section>
+
+      <section class="section" id="graduacao">
+        <div class="container">
+          <p class="section-tag">Graduação</p>
+          <h2>Oportunidades para graduação</h2>
+          <div class="list-grid">
+            <article class="card"><p><span class="status status-open">Aberta</span></p><h3>Monitoria de disciplinas</h3><p>Espaço para edital e cronograma.</p></article>
+            <article class="card"><p><span class="status status-soon">Em breve</span></p><h3>Iniciação científica</h3><p>Template para oportunidades de IC.</p></article>
+            <article class="card"><p><span class="status status-closed">Encerrada</span></p><h3>Estágio supervisionado</h3><p>Modelo para vagas e requisitos.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="pos-graduacao">
+        <div class="container">
+          <p class="section-tag">Pós-Graduação</p>
+          <h2>Oportunidades para mestrado e doutorado</h2>
+          <div class="list-grid">
+            <article class="card"><p><span class="status status-open">Aberta</span></p><h3>Bolsa de pesquisa</h3><p>Chamada vinculada a linha de pesquisa.</p></article>
+            <article class="card"><p><span class="status status-soon">Em breve</span></p><h3>Processo seletivo</h3><p>Template para etapas e prazos.</p></article>
+            <article class="card"><p><span class="status status-open">Aberta</span></p><h3>Assistência em projeto</h3><p>Colaboração em projetos acadêmicos.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pos-doutorado">
+        <div class="container">
+          <p class="section-tag">Pós-Doutorado</p>
+          <h2>Oportunidades de pesquisa avançada</h2>
+          <div class="list-grid">
+            <article class="card"><p><span class="status status-soon">Em breve</span></p><h3>Chamada de pós-doc</h3><p>Bloco para divulgação de edital.</p></article>
+            <article class="card"><p><span class="status status-open">Aberta</span></p><h3>Projeto temático</h3><p>Bolsas em projetos estratégicos.</p></article>
+            <article class="card"><p><span class="status status-closed">Encerrada</span></p><h3>Cooperação internacional</h3><p>Modelo para parcerias externas.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>Departamento de Engenharia Mecânica</h2>
+          <p>Escola Politécnica da Universidade de São Paulo (Poli-USP).</p>
+        </div>
+        <div>
+          <p class="footer-title">Contato</p>
+          <p>secretaria.pme@usp.br</p>
+        </div>
+        <div>
+          <p class="footer-title">© 2026 PME Poli-USP</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
