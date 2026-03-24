@@ -100,19 +100,67 @@ body {
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
+  align-items: center;
+  gap: 1rem;
 }
 
-.nav a {
+.nav > a,
+.menu-item > a {
   color: var(--text-soft);
   text-decoration: none;
   font-weight: 500;
+  font-size: 0.92rem;
+  white-space: nowrap;
 }
 
-.nav a:hover,
-.nav a:focus-visible {
+.nav > a:hover,
+.nav > a:focus-visible,
+.menu-item > a:hover,
+.menu-item > a:focus-visible {
   color: var(--blue-soft);
+}
+
+.menu-item {
+  position: relative;
+}
+
+.has-submenu .submenu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.55rem);
+  min-width: 230px;
+  display: grid;
+  gap: 0.1rem;
+  padding: 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.has-submenu .submenu a {
+  color: var(--text-soft);
+  text-decoration: none;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.has-submenu .submenu a:hover,
+.has-submenu .submenu a:focus-visible {
+  background: var(--bg-soft);
+  color: var(--blue-soft);
+}
+
+.has-submenu:hover .submenu,
+.has-submenu:focus-within .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .hero-grid,
