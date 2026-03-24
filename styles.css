@@ -17,9 +17,7 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
@@ -92,7 +90,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .brand {
@@ -110,7 +108,7 @@ a {
 
 .brand-long {
   color: var(--text-soft);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 .nav {
@@ -133,6 +131,7 @@ a {
 }
 
 .nav > a:hover,
+.menu-toggle:hover,
 .nav > a:focus-visible,
 .menu-toggle:hover,
 .menu-toggle:focus-visible {
@@ -218,6 +217,7 @@ li,
 }
 
 .hero-actions {
+  margin-top: 1.4rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
@@ -225,6 +225,7 @@ li,
 }
 
 .btn {
+  display: inline-block;
   text-decoration: none;
   border-radius: 999px;
   padding: 0.72rem 1.15rem;
@@ -232,15 +233,8 @@ li,
   display: inline-block;
 }
 
-.btn-primary {
-  background: var(--blue);
-  color: #fff;
-}
-
-.btn-secondary {
-  border: 1px solid var(--line);
-  color: var(--text);
-}
+.btn-primary { background: var(--blue); color: #fff; }
+.btn-secondary { border: 1px solid var(--line); color: var(--text); }
 
 .hero-panel,
 .card,
@@ -300,12 +294,17 @@ li,
 .newsletter-form {
   padding: 1.1rem;
   display: grid;
-  gap: 0.55rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.newsletter-form label {
-  font-size: 0.92rem;
-  font-weight: 600;
+.photo-card {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  overflow: hidden;
 }
 
 .newsletter-form input,
