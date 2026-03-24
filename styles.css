@@ -74,11 +74,11 @@ body {
 }
 
 .header-inner {
-  min-height: 88px;
+  min-height: 74px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .brand {
@@ -100,33 +100,24 @@ body {
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 0.6rem;
-  max-width: 72%;
+  align-items: center;
+  gap: 1rem;
 }
 
-.nav-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
+.nav > a,
+.menu-item > a {
   color: var(--text-soft);
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.86rem;
+  font-size: 0.92rem;
   white-space: nowrap;
-  padding: 0.45rem 0.72rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: #fff;
-  transition: all 0.15s ease;
 }
 
-.nav-link:hover,
-.nav-link:focus-visible {
+.nav > a:hover,
+.nav > a:focus-visible,
+.menu-item > a:hover,
+.menu-item > a:focus-visible {
   color: var(--blue-soft);
-  border-color: #b8cae5;
-  background: #f7fbff;
 }
 
 .menu-item {
@@ -136,7 +127,7 @@ body {
 .has-submenu .submenu {
   position: absolute;
   left: 0;
-  top: calc(100% + 0.35rem);
+  top: calc(100% + 0.55rem);
   min-width: 230px;
   display: grid;
   gap: 0.1rem;
@@ -362,6 +353,5 @@ ul {
 
   .nav {
     display: none;
-    max-width: 100%;
   }
 }
