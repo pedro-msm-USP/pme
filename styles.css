@@ -332,7 +332,25 @@ li,
 .footer-title { font-weight: 700; margin-bottom: 0.2rem; }
 
 @media (max-width: 1080px) {
-  .nav { display: none; }
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem 0;
+  }
+
+  .nav {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.2rem;
+  }
+
+  .nav > a,
+  .menu-toggle {
+    font-size: 0.88rem;
+  }
+
   .hero-grid,
   .split,
   .newsletter-grid,
